@@ -193,23 +193,46 @@ The following questions are intended to be answered with written answers (no cod
 
 1. Which part is the file extension of the package.json file?
 
+.json
+
 2. What does JSON stand for?
+
+Java Script Object Notation
 
 3. What is the purpose of JSON?
 
+uses human readable text to transmit data objects and arrays between a server and a web application
+
 4. What does the package.json file do?
+
+converts any JavaScript object into JSON, and sends JSON to the server
 
 5. How do you install dependencies in a project after first cloning it from Github?
 
+Use package.json to install all the dependencies
+
 6. What does "forking" mean in the context of Github?
+
+taking a copy of someone else's code and storing it in your own account.
 
 7. What data types do you know?
 
+Number, string, Boolean, Null, Undefined, Symbol, Object, Array
+
 8. What is the difference between primitive and complex data types, and can you give examples of each?
+
+Primitive data types can only contain a single thing and are immutable (cannot be changed) but complex data types can store collections of data and more complex entities and are mutable (can be changed).
+
+Primitive - Number, string, boolean, null, undefined
+Complex - Symbol, object, array
 
 9. What would be the best data type for representing whether a user is logged into the system or not?
 
+Boolean
+
 10. How would you create a variable whose value could not be changed?
+
+declare a const
 
 11. What would be the outcome of running this code?
 
@@ -220,8 +243,13 @@ function sayHello(name) {
   console.log("Hello, " + firstName);
 }
 
-sayHello("Sally");
-```
+Would return undefined as the function hasn't been called.  If you did call the function with 
+
+sayHello("Sandra");
+
+then the output would be 
+
+Hello, Sandra
 
 12. What would be the outcome of running this code?
 
@@ -235,10 +263,22 @@ function getFullName(firstName, lastName) {
 const result = getFullname("Sally", "Jennings");
 
 console.log(fullName);
-```
+`
+It would result in an error as on line declaring the result variable the n is not a capital in getFullName
+
+Also an error in the final line console.log fullName as fullName is a local variable to the function so cannot be used outside of the function.  The code should be 
+
+console.log(result)
+
 
 13. If you wanted to see what dependencies were required in this project, where would you to to look for a list?
 
+package-lock.json
+
 14. When you install dependencies, what directory is created?
 
+node modules
+
 15. How can you write comments in your code?
+
+//
